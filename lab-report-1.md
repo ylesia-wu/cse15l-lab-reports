@@ -52,4 +52,10 @@
 
    ![Image](lab-report-1-images/cat_directory.png)
 
+   The working directory when this command was run was ~/lecture1/messages. An error occurred after running the *cat* command with a directory as the argument. This suggests that the *cat* command can only be used with a file as the argument.
+
+3. File as the argument
+
+   ![Image](lab-report-1-images/cat_file.png)  
+
    The working directory when this command was run was ~/lecture1/messages. 
