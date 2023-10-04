@@ -50,6 +50,6 @@
 
 2. Directory as the argument
 
-   ![Image](lab-report-1-images/ls_directory.png)
+   ![Image](lab-report-1-images/cat_directory.png)
 
    The working directory when this command was run was ~/lecture1/messages. 
