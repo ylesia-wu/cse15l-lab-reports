@@ -37,3 +37,11 @@
 3. File as the argument
 
     ![Image](lab-report-1-images/ls_file.png)
+
+   The working directory when this command was run was ~/lecture1/messages. After running the command with the argument as *en-us.txt*, the output was the content of the file. This means using *ls* with a file as the argument displays all the content of the file. The command produced no error.
+
+## cat
+
+1. No argument
+
+   
