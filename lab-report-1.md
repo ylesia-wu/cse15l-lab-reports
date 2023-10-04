@@ -19,3 +19,11 @@
    ![Image](lab-report-1-images/cd_file.png)
 
    The working directory when this command was run was ~/lecture1/messages. There was an error message displayed in the terminal, and no change was made to the working directory. The error message read "not a directory", which indicates that the *cd* command can only be used with a directory as the argument.
+
+## ls
+
+1. no argument
+
+   ![Image](lab-report-1-images/ls_no_arg.png)
+
+   The working directory when this command was run was 
