@@ -2,4 +2,4 @@
 
 **Welcome to Ylesia Wu's Home Page :)**
 
-## [Lab Report 1]([http://a.com](lab-report-1.md)
+## [Lab Report 1](lab-report-1.md)
