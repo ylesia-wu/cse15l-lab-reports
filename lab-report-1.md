@@ -58,4 +58,4 @@
 
    ![Image](lab-report-1-images/cat_file.png)  
 
-   The working directory when this command was run was ~/lecture1/messages. 
+   The working directory when this command was run was ~/lecture1/messages. After running the *cat* command with *en-us.txt* as the argument, the output was the content of the *en-us.txt* file. This means that when using *cat* with a file as the argument, the content of the file is displayed. No error was produced by this command.
