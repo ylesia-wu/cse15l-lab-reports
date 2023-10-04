@@ -44,4 +44,6 @@
 
 1. No argument
 
-   
+   ![Image](lab-report-1-images/cat_no_arg.png)
+
+   The working directory when this command was run was ~/lecture1
