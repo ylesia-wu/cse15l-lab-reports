@@ -2,4 +2,4 @@
 
 **Welcome to Ylesia Wu's Home Page :)**
 
-## [Lab Report 1](lab-report-1.md)
+## [Lab Report 1](https://ylesia-wu.github.io/cse15l-lab-reports/lab-report-1.html)
