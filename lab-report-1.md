@@ -27,3 +27,9 @@
    ![Image](lab-report-1-images/ls_no_arg.png)
 
    The working directory when this command was run was ~/lecture1. The output in the terminal was all the folders and files under the current directory. This means using *ls* with no arguments lists out all the content under the current working directory by default. No error was produced by running the command.
+
+2. diretory as the argument
+
+    ![Image](lab-report-1-images/ls_directory.png)
+
+    The working directory when this command was run was ~/lecture1
