@@ -23,3 +23,6 @@ From my code, `handleRequest` in `Handler` class is called. `url.getPath()` was 
 
 3. No need to enter password
 ![Image](lab-report-2-images/no_password.png)
+
+## Part 3
+During lab in week 2, I leaned how to use `ssh` to connect to a remote computer, which will be useful if I ever need better hardware in the future. I also learned how to create a server (although most of the code in `Server` I still don't understand). It is super exciting that the server is interactable, which means I can use the basic structure of the code and build on top of it to create a server that is more useful!
