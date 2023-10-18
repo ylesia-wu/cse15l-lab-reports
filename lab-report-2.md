@@ -19,15 +19,15 @@ From my code, `handleRequest` in `Handler` class is called. This time `url.getPa
 
 ## Part 2
 
-1. private key
+private key
 
 <img src="lab-report-2-images/private_key.png" alt="drawing" width="600">
 
-2. public key
+public key
 
 <img src="lab-report-2-images/public_key.png" alt="drawing" width="600">
 
-3. No need to enter password
+No need to enter password
 
 <img src="lab-report-2-images/no_password.png" alt="drawing" width="600">
 
