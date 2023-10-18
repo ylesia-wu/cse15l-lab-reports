@@ -3,8 +3,8 @@
 ## Part 1
 
 ### `StringServer`
-<img src="lab-report-2-images/StringServerCode1.png" alt="drawing" width="400">
-<img src="lab-report-2-images/StringServerCode2.png" alt="drawing" width="400">
+<img src="lab-report-2-images/StringServerCode1.png" alt="drawing" width="600">
+<img src="lab-report-2-images/StringServerCode2.png" alt="drawing" width="600">
 
 ### `/add-message`
 ![Image](lab-report-2-images/Server1.png)
