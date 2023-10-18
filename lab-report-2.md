@@ -8,11 +8,11 @@
 
 ### `/add-message`
 ![Image](lab-report-2-images/Server1.png)
-From my code, `handleRequest` in `Handler` class and `main` in `StringServer` class are called. `args` in main has the argument [“2020”] which is the port number; `url.getPath()` was `/add-message`; `url.getQuery()` was `?s=Ylesia`. After this call, `currentCount` was updated to `1` and `output` was updated to “1. Ylesia\n”.
+From my code, `handleRequest` in `Handler` class and `main` in `StringServer` class are called. `args` in main has the argument [“2020”] which is the port number; `url.getPath()` was `/add-message`; `url.getQuery()` was `?s=Ylesia`. After this call, `currentCount` was updated to `1` and `output` was updated to `“1. Ylesia\n”`.
 
 
 ![Image](lab-report-2-images/Server2.png)
-From my code, `handleRequest` in `Handler` class is called. `url.getPath()` was `/add-message`; `url.getQuery()` was `?s=Wu`. After this call, `currentCount` was updated to `2` and `output` was updated to `1. Ylesia\n2. Wu\n`.
+From my code, `handleRequest` in `Handler` class is called. `url.getPath()` was `/add-message`; `url.getQuery()` was `?s=Wu`. After this call, `currentCount` was updated to `2` and `output` was updated to `"1. Ylesia\n2. Wu\n"`.
 
 ## Part 2
 
