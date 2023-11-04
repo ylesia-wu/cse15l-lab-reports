@@ -52,5 +52,7 @@ static void reverseInPlace(int[] arr) {
   }
 ```
 
+The original bug was that, after successfully reversing the array, the code kept swapping the second half of the array with the first half of the array, which resulted in a symmetric array instead of correctly reversing the original array. The fix I did was stopping the swapping after getting through half of the array since the entire array would have already been successfully reversed.
+
 ## Part 2 - Researching Commands
 
