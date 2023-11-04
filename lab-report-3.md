@@ -25,9 +25,11 @@ public void testReverseInPlace() {
 ### 3. symptom
 Output when running failure-inducing input:
 
+<img src="lab-report-3-images/failure.png" alt="drawing" width="800">
 
 Output when running non-failure-inducing input:
 
+<img src="lab-report-3-images/no_failure.png" alt="drawing" width="400">
 
 ### 4. bug
 Before:
