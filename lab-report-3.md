@@ -58,7 +58,7 @@ The original bug was that, after successfully reversing the array, the code kept
 
 ### `grep`
 
-Option 1: `-i` (ignore-case)
+#### Option 1: `-i` (ignore-case)
 
 Ignore case distinctions in patterns and input data, so that characters that differ only in case match each other.
 
@@ -85,17 +85,32 @@ technical/911report/preface.txt:                and equal rights for women. It m
 ```
 As we can see, the `-i` option ignores the case of the search. Without this command, the search would have only output the line from `technical/911report/chapter-12.txt:                activity and limit employment opportunities for young Saudis. Women find their` because it is the only line that contains "Women", with a capitalized "W". However, with this command added, we were able to find all lines that contain "Women" in any form of capitalization. 
 
-Option 2: `-v` (invert-match)
+Example 2:
+```
+ylesia@Ylesia-MacBook-Air docsearch % grep -i "freedom" technical/911report/*.txt
+technical/911report/chapter-10.txt:                    Freedom."
+technical/911report/chapter-12.txt:                greater freedom, women and girls are emerging from subjugation, and 3 million
+technical/911report/chapter-12.txt:                Muslims that we must encourage reform, freedom, democracy, and opportunity, even
+technical/911report/chapter-12.txt:                The United Nations has rightly equated "literacy as freedom."
+technical/911report/chapter-12.txt:                manifestation of our belief in freedom, democracy, global economic growth, and the
+technical/911report/chapter-13.5.txt:                Protecting America's Freedom in the Information Age (Markle Foundation, 2002) (both
+technical/911report/chapter-2.txt:                Sudanese, clearly thought that he had new freedom to publish his appeals for jihad.
+technical/911report/chapter-2.txt:                in Afghanistan a freedom of movement that he had lacked in Sudan. Al Qaeda members
+```
+Similarly, the `-i` option allows us to find all lines that contain "freedom" in any form of capitalization. We can see that we found lines that contain either "freedom" or "Freedom".
+
+
+#### Option 2: `-v` (invert-match)
 
 Invert the sense of matching, to select non-matching lines.
 
 
-Option 3: `-l` (files-with-matches)
+#### Option 3: `-l` (files-with-matches)
 
 Suppress normal output; instead print the name of each input file from which output would normally have been printed.  Scanning each input file stops upon first match.
 
 
-Option 4: `-w` (word-regexp)
+#### Option 4: `-w` (word-regexp)
 
 Select only those lines containing matches that form whole words.  The test is that the matching substring must either be at the beginning of the line, or preceded by a non-word constituent character.  Similarly, it must be either at the end of the line or followed by a non-word constituent character.  Word-constituent characters are letters, digits, and the underscore.  This option has no effect if -x is also specified.
 
