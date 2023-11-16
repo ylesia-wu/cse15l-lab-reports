@@ -2,7 +2,7 @@
 
 ### Step 4
 
-<img src="lab-report-4-images/step4.png" alt="drawing" width="600">
+<img src="lab-report-4-images/step4.png" alt="drawing" width="800">
 
 Keys pressed: *ssh\<space\>cs15lfa23pr@ieng6-201.ucsd.edu\<enter\>*
 
@@ -26,7 +26,7 @@ I first used `cd` to change my working directory to `lab7`. After this, I copied
 
 ### Step 7
 
-<img src="lab-report-4-images/step7_vim.png" alt="drawing" width="500">
+<img src="lab-report-4-images/step7_vim.png" alt="drawing" width="400">
 
 <img src="lab-report-4-images/step7_edit.png" alt="drawing" width="800">
 
