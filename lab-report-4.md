@@ -2,6 +2,8 @@
 
 ### Step 4
 
+<img src="lab-report-4-images/step4.png" alt="drawing" width="600">
+
 Keys pressed: *ssh\<space\>cs15lfa23pr@ieng6-201.ucsd.edu\<enter\>*
 
 I used `ssh` to connect to my ieng6 remote machine.
@@ -23,6 +25,8 @@ Keys pressed: *\cd\<space\>lab7\<enter\><command\>c\<command\>v\<enter\>\<comman
 I first used `cd` to change my working directory to `lab7`. After this, I copied the `javac` command, pasted it to the terminal, and ran it. I then copied the `java` command, pasted it to the terminal, added the test file's name, and ran it.
 
 ### Step 7
+
+<img src="lab-report-4-images/step7_vim.png" alt="drawing" width="500">
 
 <img src="lab-report-4-images/step7_edit.png" alt="drawing" width="800">
 
