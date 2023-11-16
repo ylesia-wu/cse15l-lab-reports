@@ -10,4 +10,4 @@
 
 ## [Lab Report 3](https://ylesia-wu.github.io/cse15l-lab-reports/lab-report-3.html)
 
-## [Lab Report 3](https://ylesia-wu.github.io/cse15l-lab-reports/lab-report-4.html)
+## [Lab Report 4](https://ylesia-wu.github.io/cse15l-lab-reports/lab-report-4.html)
