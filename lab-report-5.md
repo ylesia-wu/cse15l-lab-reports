@@ -17,6 +17,10 @@ javac -cp $CPATH *.java
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples
 ```
 
+This is my file structure:
+
+<img src="lab-report-5-images/file_structure.png" alt="drawing" width="250">
+
 My list methods look like this:
 
 ```
