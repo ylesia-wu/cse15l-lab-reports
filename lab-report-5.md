@@ -8,7 +8,41 @@ Hello, I am trying to test my list methods but one of my tests is failing.
 
 <img src="lab-report-5-images/test_error.png" alt="drawing" width="600">
 
-My ListExamples class looks like this:
+My merge method looks like this:
+
+```
+static List<String> merge(List<String> list1, List<String> list2) {
+    List<String> result = new ArrayList<>();
+    int index1 = 0, index2 = 0;
+    while(index1 < list1.size() && index2 < list2.size()) {
+      int compared = list1.get(index1).compareTo(list2.get(index2));
+      if(compared == 0) {
+        result.add(list1.get(index1));
+        index1 += 1;
+        index2 += 1;
+      }
+      else if(compared < 0) {
+        result.add(list1.get(index1));
+        index1 += 1;
+      }
+      else {
+        result.add(list2.get(index2));
+        index2 += 1;
+      }
+    }
+    while(index1 < list1.size()) {
+      result.add(list1.get(index1));
+      index1 += 1;
+    }
+    while(index2 < list2.size()) {
+      result.add(list2.get(index2));
+      index1 += 1;
+    }
+    return result;
+  }
+```
+
+My test cases looks like this:
 
 ```
 import static org.junit.Assert.*;
@@ -42,6 +76,20 @@ public class TestListExamples {
   }
 }
 ```
+
+The symptom is that the test failed. The failure-inducing input was the two lists, {"a", "b", "c"} and {"a", "d"}. Can I please get some help debugging my code?
+
+2. TA:
+
+Try using the Java Debugger tool to help you debug. You can use the following commands:
+
+```
+javac -g -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+jdb -classpath .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
+```
+
+Once you have the Java Debugger initialized, enter `stop at TestListExamples:26` and then `run`.
+
 
 
 
