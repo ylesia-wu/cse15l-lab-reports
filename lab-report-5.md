@@ -8,10 +8,44 @@ Hello, I am trying to test my list methods but one of my tests is failing.
 
 <img src="lab-report-5-images/test_error.png" alt="drawing" width="600">
 
-My merge method looks like this:
+`test.sh` just contains the Junit commands:
 
 ```
-static List<String> merge(List<String> list1, List<String> list2) {
+CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
+
+javac -cp $CPATH *.java
+java -cp $CPATH org.junit.runner.JUnitCore TestListExamples
+```
+
+My list methods look like this:
+
+```
+import java.util.ArrayList;
+import java.util.List;
+
+interface StringChecker { boolean checkString(String s); }
+
+class ListExamples {
+
+  static List<String> result = new ArrayList<>();
+  // Returns a new list that has all the elements of the input list for which
+  // the StringChecker returns true, and not the elements that return false, in
+  // the same order they appeared in the input list;
+  static List<String> filter(List<String> list, StringChecker sc) {
+    if(list.size() == 0) { return list; }
+    result.clear();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(s);
+      }
+    }
+    return result;
+  }
+
+
+  // Takes two sorted lists of strings (so "a" appears before "b" and so on),
+  // and return a new list that has all the strings in both lists in sorted order.
+  static List<String> merge(List<String> list1, List<String> list2) {
     List<String> result = new ArrayList<>();
     int index1 = 0, index2 = 0;
     while(index1 < list1.size() && index2 < list2.size()) {
@@ -40,9 +74,12 @@ static List<String> merge(List<String> list1, List<String> list2) {
     }
     return result;
   }
+
+
+}
 ```
 
-My test cases looks like this:
+My test cases look like this:
 
 ```
 import static org.junit.Assert.*;
@@ -88,7 +125,7 @@ javac -g -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 jdb -classpath .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
 ```
 
-Once you have the Java Debugger initialized, enter `stop at TestListExamples:26` and then `run`.
+Once you have the Java Debugger initialized, enter `stop at TestListExamples:<the line number in your test case where you run the method>` and then `run`.
 
 3. Student:
 
@@ -103,7 +140,32 @@ This is what I did:
 In the end, I was able to find out that I was incrementing the wrong index. I have fixed my merge method, and it now looks like this:
 
 ```
-static List<String> merge(List<String> list1, List<String> list2) {
+import java.util.ArrayList;
+import java.util.List;
+
+interface StringChecker { boolean checkString(String s); }
+
+class ListExamples {
+
+  static List<String> result = new ArrayList<>();
+  // Returns a new list that has all the elements of the input list for which
+  // the StringChecker returns true, and not the elements that return false, in
+  // the same order they appeared in the input list;
+  static List<String> filter(List<String> list, StringChecker sc) {
+    if(list.size() == 0) { return list; }
+    result.clear();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(s);
+      }
+    }
+    return result;
+  }
+
+
+  // Takes two sorted lists of strings (so "a" appears before "b" and so on),
+  // and return a new list that has all the strings in both lists in sorted order.
+  static List<String> merge(List<String> list1, List<String> list2) {
     List<String> result = new ArrayList<>();
     int index1 = 0, index2 = 0;
     while(index1 < list1.size() && index2 < list2.size()) {
@@ -132,6 +194,9 @@ static List<String> merge(List<String> list1, List<String> list2) {
     }
     return result;
   }
+
+
+}
 ```
 
-
+I just changed `index1` on the second to last line to `index2`, and that was it!
