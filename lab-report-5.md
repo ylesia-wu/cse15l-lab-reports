@@ -8,7 +8,7 @@ Hello, I am trying to test my list methods but one of my tests is failing.
 
 My ListExamples class looks like this:
 
-```py
+```
 import static org.junit.Assert.*;
 import org.junit.*;
 import java.util.Arrays;
