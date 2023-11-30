@@ -6,6 +6,8 @@
 
 Hello, I am trying to test my list methods but one of my tests is failing.
 
+<img src="lab-report-5-images/test_error.png" alt="drawing" width="600">
+
 My ListExamples class looks like this:
 
 ```
