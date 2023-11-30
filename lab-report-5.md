@@ -90,6 +90,48 @@ jdb -classpath .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner
 
 Once you have the Java Debugger initialized, enter `stop at TestListExamples:26` and then `run`.
 
+3. Student:
 
+Thank you so much! I used the Java Debugger tool as you suggested and found out what the problem with my code was!
+
+This is what I did:
+
+<img src="lab-report-5-images/try1.png" alt="drawing" width="1000">
+
+<img src="lab-report-5-images/try2.png" alt="drawing" width="600">
+
+In the end, I was able to find out that I was incrementing the wrong index. I have fixed my merge method, and it now looks like this:
+
+```
+static List<String> merge(List<String> list1, List<String> list2) {
+    List<String> result = new ArrayList<>();
+    int index1 = 0, index2 = 0;
+    while(index1 < list1.size() && index2 < list2.size()) {
+      int compared = list1.get(index1).compareTo(list2.get(index2));
+      if(compared == 0) {
+        result.add(list1.get(index1));
+        index1 += 1;
+        index2 += 1;
+      }
+      else if(compared < 0) {
+        result.add(list1.get(index1));
+        index1 += 1;
+      }
+      else {
+        result.add(list2.get(index2));
+        index2 += 1;
+      }
+    }
+    while(index1 < list1.size()) {
+      result.add(list1.get(index1));
+      index1 += 1;
+    }
+    while(index2 < list2.size()) {
+      result.add(list2.get(index2));
+      index2 += 1;
+    }
+    return result;
+  }
+```
 
 
