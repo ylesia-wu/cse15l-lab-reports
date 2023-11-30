@@ -2,7 +2,7 @@
 
 ### Part 1 - Debugging Scenario
 
-1. Student:
+Step 1. Student:
 
 Hello, I am trying to test my list methods but one of my tests is failing.
 
@@ -120,7 +120,7 @@ public class TestListExamples {
 
 The symptom is that the test failed. The failure-inducing input was the two lists, `{"a", "b", "c"}` and `{"a", "d"}`. Can I please get some help debugging my code?
 
-2. TA:
+Step 2. TA:
 
 Try using the Java Debugger tool to help you debug. You can use the following commands:
 
@@ -131,7 +131,7 @@ jdb -classpath .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner
 
 Once you have the Java Debugger initialized, enter `stop at TestListExamples:<the line number in your test case where you run the method>` and then `run`.
 
-3. Student:
+Step 3. Student:
 
 Thank you so much! I used the Java Debugger tool as you suggested and found out what the problem with my code was!
 
@@ -205,7 +205,7 @@ class ListExamples {
 
 I just changed `index1` near the end of the method to `index2`, and that was it!
 
-4. All the necessary information was incorporated into the conversation above.
+Step 4. All the necessary information was incorporated into the conversation above.
 
 ### Part 2 - Reflection
 
