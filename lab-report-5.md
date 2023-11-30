@@ -118,7 +118,7 @@ public class TestListExamples {
 }
 ```
 
-The symptom is that the test failed. The failure-inducing input was the two lists, {"a", "b", "c"} and {"a", "d"}. Can I please get some help debugging my code?
+The symptom is that the test failed. The failure-inducing input was the two lists, `{"a", "b", "c"}` and `{"a", "d"}`. Can I please get some help debugging my code?
 
 2. TA:
 
