@@ -203,4 +203,9 @@ class ListExamples {
 }
 ```
 
-I just changed `index1` on the second to last line to `index2`, and that was it!
+I just changed `index1` near the end of the method to `index2`, and that was it!
+
+### Part 2 - Reflection
+
+The Vim Editor was super cool! I liked how it allows editing of files without having to take the trouble of opening a text editor manually and then looking for the file. The Vim tutorial that we watched during lab was pretty cool since it was interactive and allows us to learn in our own pace.
+
